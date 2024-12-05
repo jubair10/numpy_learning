@@ -33,9 +33,12 @@ for i in var2:
 """     Smartest Way    """
 #                          to store value |  value type   ["S"]
 for i in np.nditer(var2,flags=['buffered'],op_dtypes=[np.string_]):
+    print(np.nditer(var2,flags=['buffered'],op_dtypes=[np.string_]))
     print(i)
 # same as line 19 to 24
 
+print("ndenumerate")
+print(var2)
 for i,d in np.ndenumerate(var2):
     print((i,d))
 """

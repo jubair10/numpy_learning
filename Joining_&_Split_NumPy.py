@@ -44,13 +44,16 @@ stack = np.dstack((var, var1))  # == np.stack((var,var1),axis=1)
 
 print(stack)
 print()
-""" Spliting """
 
-sp = np.split(var, 2)  # [array([1, 2]), array([3, 4])]
+
+""" Spliting """
+print(var)
+print("split")
+sp = np.split(var, 2)  # [array([1, 2]), array([3, 4])] (returns list of array)
 print(sp)
 print(type(sp))  # <class 'list'>
 
-
+print("array_split")
 arr_sp = np.array_split(var, 2)
 print(arr_sp)
 print(type(arr_sp))

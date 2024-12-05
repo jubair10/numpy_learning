@@ -75,7 +75,7 @@ print("Flatten",resize.flatten(order="F"))
 
 # >Ravel
 print("Ravel",np.ravel(resize))
-
+print(var.data)
 """
 Go and Find The Order list of Ravel and Flatten in Numpy Documentation.
 ---------------------------------
